@@ -413,9 +413,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 300px;
+    max-width: 310px;
     box-shadow: -50px -0px 40px rgba(255, 255, 255, 0.5),
     50px 50px 40px rgba(255, 255, 255, 0.5);
+    padding: 10px;
 }
 .card-product h2{
     margin: 0;
@@ -425,11 +426,9 @@ body {
 
 .card-product-nested-card {
     display: flex;
-    
-    
-    
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 
 }
 
@@ -453,5 +452,9 @@ body {
     padding-left: 0;
     background-color: transparent;
     border:none;
-    color:aqua
+    color:rgb(25, 105, 105)
+}
+.card-product-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
