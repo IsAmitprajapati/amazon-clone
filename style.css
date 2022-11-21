@@ -496,16 +496,35 @@ body {
 }
 .today_deals_product_list{
     display: flex;
+    overflow: hidden;
 
 }
 .today_deals_product_item{
-    min-width: 100px;
-    width: 270px;
-    padding: 20px 10px;
+    min-width: 250px;
+    height: 250px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0%);
+    transition: transform 1s;
+}
+.todayDeals_product_image{
+    height: 200px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15px;
 }
 .today_deals_product_item img{
     width: 100%;
-    padding: 15px 0px;
+    height: 100%;
+    /* padding: 20px 20px; */
+    background-color: red;
+}
+.today_deals_product_item p{
+    justify-self: flex-end;
 }
 .discount_Contaienr{
     /* border: 2px solid red; */
@@ -534,6 +553,7 @@ body {
     align-items: center;
     height: 100%;
     padding: 20px;
+    z-index: 10;
 }
 .today_deal_btn{
     padding: 40px 10px;
